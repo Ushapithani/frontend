@@ -1,41 +1,62 @@
 
-AI CAREER PATH - FRONTEND
-Frontend for the AI-Based Career Recommendation and Resume Analyzer project. This UI allows users to sign up and login, upload their resume, enter skills, degree and interests, get AI career recommendations, and view resume analysis results.
-It connects to a FastAPI backend for resume processing and predictions.
+---
 
-Features
+# 🎨 AI CareerPath – Frontend
 
-Modern responsive UI
-Login and Signup pages
-Resume upload interface
-Career recommendation dashboard
-Dark theme with glassmorphism UI
-API integration with FastAPI backend
-Ready for deployment on Vercel
+Welcome to the AI CareerPath Frontend project! This modern Next.js application allows users to upload their resume, enter skills and interests, and get AI-powered career recommendations connected to a FastAPI backend.
 
+---
 
-Project Architecture
+## ✨ Features
+
+- 🖥️ **Modern Responsive UI:** Clean and beautiful interface for all devices.
+- 🔐 **Login and Signup:** Secure user authentication pages.
+- 📄 **Resume Upload:** Easy drag and drop resume upload interface.
+- 💼 **Career Dashboard:** View AI career recommendations in one place.
+- 🌙 **Dark Theme:** Glassmorphism dark UI design.
+- 🔌 **API Integration:** Seamlessly connects with FastAPI backend.
+- 🚀 **Vercel Ready:** Optimized for deployment on Vercel.
+
+---
+
+## 📦 Requirements
+
+- Node.js 18+
+- npm or yarn
+- Next.js 14
+- FastAPI backend running
+
+---
+
+## 🧠 Project Architecture
+
+```
 User → Frontend (Next.js) → Backend API (FastAPI) → ML Model
+```
+
 Frontend sends resume and skills, backend returns score, skills detected, and career predictions.
 
-Tech Stack
-Frontend
+---
 
-Next.js 14
-React
-Tailwind CSS
-ShadCN UI
-Framer Motion (animations)
-Axios / Fetch API
+## 🛠️ Tech Stack
 
-Backend (separate repo)
+### Frontend
+- **Next.js 14** — React framework
+- **React** — UI library
+- **Tailwind CSS** — styling
+- **ShadCN UI** — component library
+- **Framer Motion** — animations
+- **Axios / Fetch API** — API calls
 
-FastAPI
-Python
-ML Model
+### Backend (separate repo)
+- **FastAPI** — Python backend
+- **ML Model** — career prediction
 
+---
 
-Folder Structure
+## 📁 Folder Structure
+
+```
 frontend/
 │
 ├── app/
@@ -56,15 +77,26 @@ frontend/
 ├── public/
 ├── styles/
 └── package.json
+```
 
-Installation
-Step 1 — Clone the repo
-bashgit clone https://github.com/Ushapithani/frontend.git
+---
+
+## ⚙️ Installation
+
+### Step 1 — Clone the repo
+```bash
+git clone https://github.com/Ushapithani/frontend.git
 cd frontend
-Step 2 — Install dependencies
-bashnpm install
-Step 3 — Run locally
-bashnpm run dev
+```
+
+### Step 2 — Install dependencies
+```bash
+npm install
+```
+
+### Step 3 — Run locally
+```bash
+npm run dev
 ```
 
 Open browser at:
@@ -74,75 +106,91 @@ http://localhost:3000
 
 ---
 
-## Backend Connection
+## 🔌 Backend Connection
 
 Create `.env.local` file:
+
 ```
 NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 ```
 
 If using deployed backend:
+
 ```
 NEXT_PUBLIC_API_URL=https://your-backend-url.onrender.com
 ```
 
 ---
 
-## Resume Upload Flow
+## 📤 Resume Upload Flow
 
 1. User logs in
-2. Uploads resume
+2. Uploads resume PDF
 3. Frontend sends file to `POST /predict`
 4. Backend returns score, skills, and career suggestions
 5. Dashboard displays the result
 
 ---
 
-## Pages Included
+## 🎯 Pages Included
 
-- Home page
-- Login page
-- Signup page
-- Resume upload page
-- Career dashboard
+- 🏠 **Home page** — landing page
+- 🔐 **Login page** — user login
+- 📝 **Signup page** — user registration
+- 📄 **Upload page** — resume upload
+- 📊 **Dashboard** — career recommendations
 
 ---
 
-## UI Preview
+## 🖼️ UI Preview
 
 Add screenshots here:
+
 ```
 /screenshots/home.png
 /screenshots/dashboard.png
+```
 
-Deployment
-Deploy to Vercel
-bashnpm run build
+---
+
+## 🌐 Deployment
+
+### Deploy to Vercel
+
+```bash
+npm run build
 ```
 
 Push to GitHub, import in Vercel, and deploy.
 
 Add environment variable in Vercel:
+
 ```
 NEXT_PUBLIC_API_URL=your_backend_url
+```
 
-Developer
-Madhu / Usha Pithani — AI and Full Stack Developer
+---
 
-Backend: https://github.com/Ushapithani/backend
-Frontend: https://github.com/Ushapithani/frontend
+## 🔮 Future Improvements
 
+- 🔑 JWT authentication
+- 👤 Profile page
+- 📝 Resume builder
+- 🤖 Chatbot career guide
+- 📊 Admin dashboard
+- 🗄️ Database integration
 
-Future Improvements
+---
 
-JWT authentication
-Profile page
-Resume builder
-Chatbot career guide
-Admin dashboard
-Database integration
+## 👩‍💻 Developer
 
+**Usha Pithani** — AI and Full Stack Developer
 
+- Backend: https://github.com/Ushapithani/backend
+- Frontend: https://github.com/Ushapithani/frontend
 
-GitHub
-If you find this project useful, give it a star on GitHub! Sonnet 4.6
+---
+
+## 🏁 Project
+
+This project is built as an AI-Based Career Recommendation System using ML. Suitable for Final Year Project, Hackathon, and Portfolio.
