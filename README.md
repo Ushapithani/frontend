@@ -1,5 +1,5 @@
 
-AI CareerPath – Frontend
+AI CAREER PATH - FRONTEND
 Frontend for the AI-Based Career Recommendation and Resume Analyzer project. This UI allows users to sign up and login, upload their resume, enter skills, degree and interests, get AI career recommendations, and view resume analysis results.
 It connects to a FastAPI backend for resume processing and predictions.
 
